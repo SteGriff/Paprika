@@ -1,0 +1,193 @@
+*neutral power
+blazing
+fire
+water
+air
+earth
+space
+galactic
+flying
+fireproof
+hovering
+toughened
+hardy
+watchful
+giant
+mini
+legendary
+metal
+soaring
+sprightly
+
+*light power
+shining
+gallant
+glowing
+noble
+hero
+righteous
+supreme
+hopeful
+
+*dark power
+undead
+deathless
+infected
+poison
+vengeful
+vengeant
+baleful
+crimson
+murderous
+stalking
+condemned
+rotting
+dire
+terrible
+horrible
+screeching
+
+*light home
+day
+light
+justice
+truth
+honour
+glory
+life
+thunder
+power
+courage
+heaven
+sky
+wonder
+wisdom
+
+*dark home
+night
+darkness
+lies
+evil
+fury
+bones
+blood
+shadow
+shade
+thunder
+terror
+
+*beast
+ant
+agent
+angel
+antelope
+axeman
+bat
+bear
+beast
+behemoth
+boar
+buffalo
+bug
+bull
+canine
+cat
+cavalier
+centaur
+child
+cougar
+crab
+daughter
+deer
+disciple
+dingo
+dino
+dog
+dragon
+eagle
+eel
+elephant
+ent
+esquire
+eye
+falcon
+faun
+fox
+gatekeeper
+giant
+ghost
+golem
+goblin
+gremlin
+griffin
+harpy
+hound
+hunter
+huntsman
+hydra
+imp
+joker
+jackal
+king
+knight
+kraken
+kryll
+leviathan
+lion
+lizard
+manticore
+minotaur
+newt
+ogre
+orc
+owl
+ox
+panther
+pegasus
+phoenix
+priest
+rat
+roc
+satyr
+seer
+shark
+skeleton
+skull
+snail
+snake
+son
+spider
+spirit
+stag
+tiger
+titan
+treant
+unicorn
+warrior
+watcher
+weasel
+whale
+wolf
+wolverine
+yeoman
+zebu
+
+*power
+[neutral power]
+[light power]
+[dark power]
+
+*light monster
+[light power] [beast] of [light home]
+[beast] of [light home]
+
+*dark monster
+[dark power] [beast] of [dark home]
+[beast] of [dark home]
+
+*monster
+[power] [beast]
+[light power] [beast] of [light home]
+[dark power] [beast] of [dark home]
+[beast] of [light home]
+[beast] of [dark home]

@@ -1,0 +1,120 @@
+*gossip commentary
+[somewhat] [opinion]
+[somewhat] [opinion] [comment tail]
+
+*somewhat
+kind of
+pretty
+so
+too
+rather
+very
+incredibly
+
+*opinion
+[nice gossip opinion]
+[mean gossip opinion]
+
+*nice gossip opinion
+good
+great
+brilliant
+cool
+nice
+sweet
+
+*mean gossip opinion
+shortsighted
+dumb
+stupid
+weird
+silly
+creepy
+
+*comment tail
+if you ask me
+in my opinion
+I reckon
+I say
+
+*formal somewhat
+somewhat
+too
+rather
+very
+
+*mean buzzword
+unsustainable
+incoherent
+meaningless
+scandalous
+shortsighted
+unjustifiable
+
+*the newspaper
+the [newspaper]
+*newspaper
+Telegraph
+Times
+Independent
+Guardian
+
+*great
+great
+fantastic
+brilliant
+super
+smashing
+excellent
+
+*hyperbole
+completely
+absolutely
+100%
+totally
+so
+
+*news commentary
+[nice news opinion]
+[mean news opinion]
+
+*nice news opinion
+it's [great]
+it's [great], [comment tail]
+[news says] it's [great]
+it's [formal somewhat] [great]
+it's [formal somewhat] [great], [comment tail]
+[news says] it's [formal somewhat] [great]
+
+*mean news opinion
+it's [mean buzzword]
+it's [mean buzzword], [comment tail]
+it's [hyperbole] [mean buzzword]
+it's [hyperbole] [mean buzzword], [comment tail]
+[news says] it's [mean buzzword]
+
+*news says
+[the newspaper] [reports that] 
+ 
+*reports that
+says that
+reports that
+alleges that
+suggests that
+speculates that
+
+*controversy
+the energy crisis
+the financial crisis
+blood diamonds
+foreign policy
+big society
+privatisation
+HS2
+Royal Mail
+Twitter stock
+the new dot com bubble
+Syria
+government snooping
+nuclear power
+animal testing

@@ -1,0 +1,267 @@
+# Flavour generator file
+# Let's make # start comment lines
+# Asterisk start a category
+# and members can be defined on new lines
+# Ignore other whitespace, like this line:
+
+*complement
+You're so [skilled at ability]
+I admire how [skilful you are at ability]
+You're [somewhat good trait]
+
+*skilled at ability
+good at [skill]
+skilled at [skill]
+
+*skilful you are at ability
+good you are at [skill]
+skilful you are at [skill]
+
+*skill
+[instrument]
+playing [instrument]
+[sport]
+playing [sport]
+[written works]
+writing [written works]
+[weekending]
+
+*weekending
+paintballing
+partying
+go-karting
+skydiving
+hang-gliding
+surfing
+dancing
+
+*instrument
+piano
+guitar
+drums
+bass
+violin
+cello
+tuba
+trumpet
+ukelele
+
+*do activity
+play [games]
+go [weekending]
+write [written works]
+
+*doing activities
+playing [games]
+
+*games
+[card_games]
+[video_games]
+[sport]
+
+*card_games
+cards
+whist
+rummy
+blackjack
+poker
+snap
+bridge
+
+*video_games
+Sonic
+Mario
+Minecraft
+Skylanders
+
+*sport
+football
+golf
+tennis
+hockey
+rugby
+table tennis
+swimming
+athletics
+
+*written works
+poetry
+prose
+murder mysteries
+short stories
+sci-fi
+fantasy
+verse
+songs
+
+*concern for you
+how are you?
+are you ok?
+are you alright?
+are you feeling ok?
+are you feeling alright?
+
+*concern for self
+I feel [somewhat ill]
+I'm [somewhat ill]
+[groan]... I feel [somewhat ill]
+[groan]... I'm [somewhat ill]
+
+*somewhat ill
+[ill]
+[a bit] [ill]
+sick as [a] [animal]
+
+*concern for country
+this country has gone to the [animal]s
+this country used to be great
+
+*concern
+[concern for you]
+[concern for self]
+[concern for country]
+
+*groan
+eeuurrgh
+uuurrr
+augh
+oooh
+oohh
+bleerrrg
+
+*a bit
+a bit
+a little
+rather
+kind of
+
+*ill
+ill
+sick
+queasy
+rubbish
+bad
+woozy
+dizzy
+
+*character
+is [somewhat trait]
+[does good things]
+[does bad things]
+
+*trait
+[good trait]
+[bad trait]
+
+*somewhat trait
+[somewhat good trait]
+[somewhat bad trait]
+
+*somewhat bad trait
+[a bit] [bad trait]
+[a bit] too [bad trait]
+
+*bad trait
+selfish
+proud
+greedy
+loud
+noisy
+attention-seeking
+grumpy
+annoying
+boring
+officious
+violent
+
+*somewhat good trait
+[very] [good trait]
+too [good trait]
+
+*good trait
+nice
+kind
+gentle
+honest
+sweet
+considerate
+good company
+noble
+bold
+courageous
+sincere
+
+*very
+very
+so
+rather
+auspiciously
+considerably
+
+*does good things
+volunteers at the [charity place]
+[looks after] [the vulnerable]
+
+*does bad things
+hurts people
+
+*looks after
+looks after
+takes care of
+looks out for
+spends time with
+cares a lot for
+
+*the vulnerable
+the homeless
+people in need
+orphans
+the orphans
+old folks
+the old folks
+injured animals
+
+*charity place
+the charity shop
+the orphanage
+the shelter
+the soup kitchen
+the rescue centre
+the hospice
+the old folks' home
+
+*gossip
+did you hear about [male name]? He [did something interesting]
+I notice [name] [did something interesting]
+
+*did something interesting
+adopted [adoptee]
+disappeared for days
+
+*adoptee
+[a] [animal]
+another [animal]
+[a] [infant]
+another [infant]
+
+*animal
+cat
+dog
+fish
+goat
+cow
+pig
+mouse
+moose
+shark
+whale
+
+*infant
+child
+[child]
+little [child]
+baby [child]
+
+*child
+girl
+boy

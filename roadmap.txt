@@ -1,0 +1,13 @@
+"Flavour Generator" Roadmap
+Product name candidates:
+Paprika
+
+TODO:
+
+1.Identifiers in [referenced text] so that differing instances can be generated
+Currently [animal] is generated once, and all occurences of [animal] replaced with, say, 'dog'.
+Solution: Allow #comments inside [blocks]
+[animal#1] - stops parsing at # but still calculates the closing bound (for replacement)
+[animal#2] - gets the same category, but isn't caught in the replacement of [animal#1]
+
+2.Import files

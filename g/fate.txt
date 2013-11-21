@@ -1,0 +1,25 @@
+*fate
+[good fate]
+[bad fate]
+
+*good fate
+lived
+won a medal
+was blessed
+was anointed
+saw a vision
+saw into the future
+saw into the void
+saw into the infinite
+became immortal
+gaines immortality
+lives forever
+became a hero
+
+*bad fate
+died
+was killed
+was crippled for life
+was decapitated
+was disemboweled
+
