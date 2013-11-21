@@ -35,17 +35,6 @@ hang-gliding
 surfing
 dancing
 
-*instrument
-piano
-guitar
-drums
-bass
-violin
-cello
-tuba
-trumpet
-ukelele
-
 *do activity
 play [games]
 go [weekending]
@@ -53,46 +42,6 @@ write [written works]
 
 *doing activities
 playing [games]
-
-*games
-[card_games]
-[video_games]
-[sport]
-
-*card_games
-cards
-whist
-rummy
-blackjack
-poker
-snap
-bridge
-
-*video_games
-Sonic
-Mario
-Minecraft
-Skylanders
-
-*sport
-football
-golf
-tennis
-hockey
-rugby
-table tennis
-swimming
-athletics
-
-*written works
-poetry
-prose
-murder mysteries
-short stories
-sci-fi
-fantasy
-verse
-songs
 
 *concern for you
 how are you?
@@ -244,24 +193,8 @@ another [animal]
 [a] [infant]
 another [infant]
 
-*animal
-cat
-dog
-fish
-goat
-cow
-pig
-mouse
-moose
-shark
-whale
-
 *infant
 child
 [child]
 little [child]
 baby [child]
-
-*child
-girl
-boy

@@ -1,7 +1,3 @@
-*tweet
-[item event phrase]
-[item event phrase with time]
-
 *item event phrase
 My [thing] [did [thing] action]
 [thing] [did [thing] action]

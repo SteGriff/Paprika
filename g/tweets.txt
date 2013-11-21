@@ -1,0 +1,10 @@
+*tweet
+[item event phrase]
+[item event phrase with time]
+[talk about tv]
+[follow me on twitter]
+That was the day [name] [lore]
+I [lore]
+[is x even a real y]
+[what is an x? is y an x?]
+[boast]

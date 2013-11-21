@@ -5,12 +5,11 @@ require 'ext.php';
 //Pre-loaded grammar
 require 'grammar.php';
 
+$DEBUG = from_request('debug');
+
 //Plain text content-type? 
-if (from_request('text')){
+if (from_request('text') || $DEBUG){
 	header('content-type: text/plain');
-}
-if (from_request('debug')){
-	var_dump($grammar);
 }
 	
 //Query from request
@@ -22,21 +21,31 @@ function randomFrom($range){
 }
 
 function parse($v){
+	global $DEBUG;
+	
 	//While string contains open square
 	$open = strpos($v, '[');
 	while ($open !== false){
-		//echo "(v: '$v')\n";
+		if ($DEBUG) { echo "(v: '$v')\n"; }
 		$close = strpos($v, ']');
 		if ($close === false){
 			return "\n*Mismatched bracket from char $open\n";
 		}
+		
+		//The bracketed expression, like [sport]
 		$expression = substr($v, $open, $close + 1 - $open);
-		//echo "--$expression--\n";
+
+		//Handle hidden early calls
+		if ($expression[1] == "!"){
+			$v = str_replace($expression, '', $v);
+			$expression = str_replace('!', '', $expression);
+		}
 		
 		$resolution = resolveBracket($expression);
-		//echo "(Resolution: '$resolution')\n";
+		if ($DEBUG) { echo "(Resolution: '$resolution')\n";}
+				
 		$v = str_replace($expression, $resolution, $v);
-		//echo "(New v: '$v')\n";
+		if ($DEBUG) { echo "(New v: '$v')\n";}
 		//Get next open for while loop
 		$open = strpos($v, '[');
 	}
@@ -62,9 +71,18 @@ function resolveBracket($v){
 
 	global $grammar;
 	
-	//Remove square brackets
-	$v = str_replace('[', '', $v);
-	$v = str_replace(']', '', $v);
+	//Remove square brackets (first and last char)
+	$v = substr($v, 1, strlen($v) - 2);
+
+	if (strpos($v, '[') !== false || strpos($v, ']') !== false){
+		return "\n*Nested brackets; make an early call - see docs\n";
+	}
+	
+	//Handle a label inside the tag like [sport#1]
+	$labelPosition = strpos($v, '#');
+	if ($labelPosition !== false){
+		$v = substr($v, 0, $labelPosition);
+	}
 	
 	//If its type exists in grammar, pick a random member
 	if ($grammar[$v]){

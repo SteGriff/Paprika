@@ -1,0 +1,19 @@
+*is x even a real y
+[!category] Is [[category]] a real [category]?
+
+*what is an x? is y an x?
+What is a [category]? Is [[category]] a [category]?
+
+*boast
+My [light power] [built posession] is entirely [construction material#1] and [construction material#2]
+
+*built posession
+house
+mansion
+hovel
+cottage
+apartment
+car
+limousine
+pool
+abode

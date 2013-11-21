@@ -1,28 +1,68 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Flavour</title>
+<title>Paprika</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
+*{margin: 0; padding: 0;}
+body{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	width: 90%;
+	margin: 1em auto;
+}
+input, button{
+	display: inline;
+	font-size: 24px;
+	padding: 4px;
+	float: left;
+}
 input{
+	height: 33px;
+	width: 79%;
+}
+button{
+	width: 18%;
+}
+div#results{
+	margin: 1em 0;
+	border: 1px solid #efefef;
+	min-height: 2em;
+	width: 97%;
+}
+div, form{
 	display: block;
-	width: 100%;
+	clear: both;
 }
 </style>
 </head>
 <body>
-	<h1>Flavour</h1>
+	<h1>
+		Paprika
+		<small><a href="load.php">[Load]</a></small>
+	</h1>
 	<form action="api.php" method="GET">
 		<input type="text" name="q">
-		<input type="submit">
-	<form>
-	<p>Try:</p>
-	<p>When I was [an] [infant], I wanted [an] [animal]. Now my [animal] [does good things]</p>
-	<p>[concern for self]... [concern for you] [complement]</p>
-	<p>That [child] is [somewhat good trait]. Let's [do activity].</p> 
-	<p>[male name], [male name], [male name]. You're too [good trait]; [an] [animal] of a man.</p>
-<script type="text/javascript">
-	
-</script>
+		<button>Go</button>
+	</form>
+	<div id="results"></div>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$r = null;
+		$(function(){
+		
+			$r = $('#results');
+			
+			$('button').click(function(e){
+				e.preventDefault();
+				q = $('form').serialize();
+				$.post("api.php", q, function(d) {
+					console.log(d);
+					$r.append("<p>" + d + "</p>");
+				});
+				
+			});
+		});
+	</script>
 </body>
 </html>

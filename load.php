@@ -39,7 +39,7 @@ while (!feof($man)){
 	echo "Loading $thisFile...\n";
 	$handle = fopen($thisFile , 'r');
 	loadGrammar($handle);
-	echo "\n...Done\n";
+	echo "...Done\n\n";
 	
 }
 
@@ -87,11 +87,10 @@ function loadGrammar($h){
 		}
 
 		if (lineIsCategory($line)){
-			//echo $line;
-			//Write the last category to grammar if it exists
+			// We've come across a new category
+			// So write the last category to grammar (if we've done one)
 			if ($category > ''){
-				$category = trim($category);
-				$grammar[$category] = $catGrammar;
+				commitCategory();
 			}
 			$category = substr($line, 1);
 			$catGrammar = [];
@@ -104,14 +103,23 @@ function loadGrammar($h){
 	}
 
 	//Commit the final category
-	$category = trim($category);
-	$grammar[$category] = $catGrammar;
+	commitCategory();
 
 	//Debug?
 	if (from_request('debug')){
 		var_dump($grammar);
 	}
 	
+}
+
+function commitCategory(){
+	global $category;
+	global $catGrammar;
+	global $grammar;
+	
+	$category = trim($category);
+	echo " - Set $category\n";
+	$grammar[$category] = $catGrammar;
 }
 
 function ignoreLine($l){

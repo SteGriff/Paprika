@@ -1,0 +1,20 @@
+*just cruising
+I cruise by in my [colour] [in cruiser]
+I cruise by on my [colour] [on cruiser]
+
+*in cruiser
+car
+convertible
+racer
+sportscar
+SUV
+battle cruiser
+dreadnought
+submarine
+
+*on cruiser
+chopper
+Harley
+motorcycle
+moped
+yacht
