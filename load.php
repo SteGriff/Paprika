@@ -1,9 +1,12 @@
 <?php
 
 require 'ext.php';
+require 'timing.php';
 
 //Render any errors/debug in plain text.
 header('content-type: text/plain');
+
+startTiming();
 
 $GRAMMAR_FILE = 'index.grammar';
 
@@ -36,48 +39,35 @@ while (!feof($man)){
 		die;
 	}
 	
-	echo "Loading $thisFile...\n";
-	$handle = fopen($thisFile , 'r');
-	loadGrammar($handle);
-	echo "...Done\n\n";
+	loadGrammar($thisFile);
 	
 }
 
 // === Save grammar to PHP array file ===
 
-// Start buffering output
-//ob_start();
-
-$grammarString = '<?php $grammar = ';
-$grammarString .= var_export($grammar, true);
-$grammarString .= '?>';
-
-// Dump to buffer
-//echo '<?php $grammar=';
-//var_dump($grammar);
-//echo '';
-
-// Get buffer into string and write to file
-//$grammarString = ob_get_contents();
+$grammarString = '<?php $grammar = ' . var_export($grammar, true) . ' ?>';
 
 $outFile = fopen('grammar.php','w');
 fwrite($outFile, $grammarString);
 fclose($outFile);
- 
-// Clean buffer and stop
-//ob_end_clean();
 
 // === Debug info for the admin ===
 echo "\n\n=====FINAL GRAMMAR=====\n\n";
 echo $grammarString;
-echo "\n\n=====END=====\n\n";
+echo "\n\n==========END==========\n";
 
-function loadGrammar($h){
+$totalTime = stopTiming();
+echo "    $totalTime secs\n=======================\n";
+
+function loadGrammar($thisFile){
 
 	global $category;
 	global $catGrammar;
 	global $grammar;
 
+	echo "Loading $thisFile...\n";
+	$h = fopen($thisFile , 'r');
+	
 	//Read through grammar
 	while (!feof($h)){
 		$line = fgets($h);
@@ -110,6 +100,9 @@ function loadGrammar($h){
 		var_dump($grammar);
 	}
 	
+	$category='';
+	$catGrammar=[];
+	echo "...Done\n\n";
 }
 
 function commitCategory(){

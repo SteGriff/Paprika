@@ -1,5 +1,5 @@
 *is x even a real y
-[!category] Is [[category]] a real [category]?
+[!category] Is [[category]] even a real [category]?
 
 *what is an x? is y an x?
 What is a [category]? Is [[category]] a [category]?
