@@ -2,71 +2,54 @@
 <html>
 <head>
 <title>Paprika</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/icon/touch-icon.png">
+
+<link rel="stylesheet" type="text/css" href="paprika_style.css" />
+
 <style type="text/css">
-*{margin: 0; padding: 0;}
 body{
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	width: 90%;
+	text-align: center;
+	box-shadow: 8px 0 8px -10px, -8px 0 8px -10px;
+}
+#logo{
+	width: 10%;
 	margin: 1em auto;
 }
-input, button{
-	display: inline;
-	font-size: 24px;
-	padding: 4px;
-	float: left;
+h1{
+	text-align: center;
 }
-input{
-	height: 33px;
-	width: 79%;
+a.option{
+	background: #ccc;
+	border: 1px solid #777;
+	border-style: none solid;
+	padding: 1em;
+	margin: auto 1em;
 }
-button{
-	width: 18%;
+ul{
+	list-style: none;
+	margin-top: 2em;
 }
-div#results{
-	margin: 1em 0;
-	border: 1px solid #efefef;
-	min-height: 2em;
-	width: 97%;
+li{
+	display: inline-block;
 }
-div, form{
-	display: block;
-	clear: both;
-}
-h1 small{
-	font-weight: 100;
-	font-size: small;
-}
+
 </style>
 </head>
 <body>
-	<h1>
-		Paprika
-		<small><a href="navigator.php">[Explore]</a> <a href="load.php">[Load]</a></small>
-	</h1>
-	<form action="api.php" method="GET">
-		<input type="text" name="q">
-		<button>Go</button>
-	</form>
-	<div id="results"></div>
 
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript">
-		$r = null;
-		$(function(){
-		
-			$r = $('#results');
-			
-			$('button').click(function(e){
-				e.preventDefault();
-				q = $('form').serialize();
-				$.post("api.php", q, function(d) {
-					console.log(d);
-					$r.append("<p>" + d + "</p>");
-				});
-				
-			});
-		});
-	</script>
+	<img id="logo" src="img/mascot.png" alt="Paprika Mascot" />
+	<h1>Paprika</h1>
+	<p class="lead">A flavour text and natural language generator.</p>
+	<p><a href="http://github.com/stegriff/paprika">Free, Public Domain source code for Paprika is on GitHub.</a></p>
+	
+	<ul role="nav">
+		<li><a class="option" href="learn.htm">Learn</a></li>
+		<li><a class="option" href="use.htm"><strong>Use</strong></a></li>
+		<li><a class="option" href="dev.htm">Develop</a></li>
+	</ul>
+	
 </body>
 </html>

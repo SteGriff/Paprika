@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Learn Paprika</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/icon/touch-icon.png">
+
+<link rel="stylesheet" type="text/css" href="paprika_style.css" />
+<style type="text/css">
+input {
+    height: 24px;
+    width: 70%;
+}
+input, button {
+    font-size: 18px;
+    padding: 4px;
+}
+
+aside{
+	position: fixed;
+	right: 1em;
+	width: 40%;
+}
+main{
+	width: 58%;
+}
+
+p{
+	line-height: 1.5em;
+	margin: 0.2em;
+}
+
+form{
+	margin-bottom: 4em;
+}
+
+.lead{
+	font-weight: bold;
+}
+.spaced, .lead{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+</style>
+</head>
+<body>
+	<aside>
+		<p><small>Output shows up here <a id="clear">[Clear]</a></small></p>
+		<div id="results"></div>
+	</aside>
+	
+	<main>
+	<h1>Learn Paprika</h1>
+	
+	<p class="lead">Paprika lets you write text that varies itself.</p>
+	
+	<p>Type or copy <code>Hello [animal]</code> into this box and press enter (a few times if you want):</p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
+
+	<p>If you use identical tags more than once, they will be replaced with the same thing (like find+replace).</p>
+	<p>Try <code>My [animal] is [good trait]. I love my [animal].</code></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
+	
+	<p>If you want to randomise tags more than once, you can label them separately with a hash. Even then, they might randomise the same result!</p>
+	<p>Try <code>I like [sport#1] and [sport#another]</code> in the box:</p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
+	
+	<div class="spaced">
+	<h2>Where do the options come from?</h2>
+	<p>I program them in, in so-called "grammar" files. You can <a href="/navigator.php">explore the whole grammar</a> but it might be a bit confusing at this point. Also, it's not finished.</p>
+	</div>
+	
+	<h2>Slightly more complicated examples</h2>
+	<p>In the grammar, there is <code>[category]</code>. You can try it in the box below.
+	For each category, there is also a list of those things (like "<code>[country]</code>", and "<code>[colour]</code>").</p>
+	<p>This lets us do something like <code>My favourite [category] is [[category]]</code></p>
+	<p><small>(The first find+replace changes the formula to e.g. <code>My favourite country is [country]</code></small></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
+	
+	<p>But notice that <code>[[category]] is a [category]</code> doesn't work!
+	That's because the internal [category] tag hasn't been replaced by the time it gets to the nested brackets.
+	To fix this, you can render it early using a 'hidden' tag.</p>
+	<p><code>[H category][[category]] is a [category]</code></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
+	
+	<p class="spaced">
+	<strong>N.b. [a] and [an] are magic. They look at the next letter in the finished sentence and change appropriately,
+	so you can write <code>[a] [category]</code> to get "a country" or "an animal".</strong>
+	</p>
+	
+	<p>I call 'H' a command. Commands are a single letter followed by a space, at the start of a tag.</p>
+	<p>Try:</p>
+	<p><code>THAT'S [U hyperbole] [U great], [U name]!!</code></p>
+	<p><code>is [L country] even a real country lol</code></p>
+	<p><code>He drove a [? colour] car</code> (For a 50% chance of that tag being rendered empty -- all extra spaces are removed too)</p>
+	<form action="api.php" method="GET">
+	<input type="text" name="q" class="query" value="THAT'S [U hyperbole] [U great], [U name]!!">
+	<button class="go">Try it</button></form>
+	
+	<p class="spaced">
+	<strong>The commands don't all work quite right, especially in nests.</strong>
+	Paprika is a rapid prototype, and I'm still working on the best way to do some of this stuff!
+	</p>
+	
+	<div class="spaced">
+	<p>OK, that's the bones of it. Now you could experiment on the main page, and from there you can navigate the grammar.
+	<a href="/use.htm">Use Paprika</a></p>
+	<p>Please email me comments and feedback: <code>ste at paprika me uk</code>. Have fun!</p>
+	</div>
+	
+	</main>
+	
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$r = null;
+		$(function(){
+
+			$r = $('#results');
+			$('button').click(function(e){
+				e.preventDefault();
+				q = $(e.currentTarget).parent().serialize();
+				$.post("api.php", q, function(d) {
+					console.log(d);
+					$r.prepend("<p>" + d + "</p>");
+				});
+				
+			});
+
+			$('#clear').click(function(){
+				$r.html("");
+			});
+		});
+	</script>
+</body>
+</html>

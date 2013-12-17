@@ -28,15 +28,26 @@ moose
 shark
 whale
 
+#Something you PLAY: "I play football" not "I play swimming"
 *sport
+badminton
+baseball
+basketball
+cricket
+croquet
 football
 golf
-tennis
 hockey
+lacrosse
+lawn bowls
+polo
+rounders
 rugby
+softball
+squash
 table tennis
-swimming
-athletics
+tennis
+volleyball
 
 *colour
 white
@@ -59,18 +70,6 @@ teal
 lavendar
 magnolia
 
-*instrument
-piano
-guitar
-drums
-bass
-violin
-cello
-tuba
-trumpet
-ukelele
-
-
 # Not in category search
 
 *family member
@@ -85,11 +84,11 @@ brother-in-law
 sister-in-law
 
 *games
-[card_games]
-[video_games]
+[card game]
+[video game]
 [sport]
 
-*card_games
+*card game
 cards
 whist
 rummy
@@ -98,13 +97,13 @@ poker
 snap
 bridge
 
-*video_games
+*video game
 Sonic
 Mario
 Minecraft
 Skylanders
 
-*written works
+*written work
 poetry
 prose
 murder mysteries

@@ -5,15 +5,15 @@
 *male name
 Aaron
 Andy
-Bob
 Bill
-Ciaran
+Bob
 Chris
-Dave
+Ciaran
 Darren
+Dave
 Edward
-Greg
 George
+Greg
 Howard
 Joel
 Kristian
@@ -24,9 +24,10 @@ Norman
 Oscar
 Pedro
 Ryan
+Simon
 Ste
 Steve
-Simon
+Thomas
 Tom
 Trevor
 Wes

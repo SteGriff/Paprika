@@ -1,20 +1,107 @@
 *just cruising
-I cruise by in my [colour] [in cruiser]
-I cruise by on my [colour] [on cruiser]
+[H terrain]I [traverse [terrain]] [by/past/through] [on/in] my [ride-[on/in] [terrain] vehicle], spraying [[terrain] feature] into your [astonished] face
 
-*in cruiser
-car
-convertible
-racer
-sportscar
-SUV
-battle cruiser
-dreadnought
-submarine
+*on/in
+on
+in
 
-*on cruiser
-chopper
+*by/past/through
+by
+past
+through
+
+*terrain
+air
+road
+sea
+mud
+
+*traverse air
+cruise
+fly
+scream
+soar
+
+*traverse road
+cruise
+fly
+scream
+roar
+tear
+
+*traverse sea
+fly
+sail
+soar
+stream
+
+*traverse mud
+carve
+cut
+roar
+
+*air feature
+seagulls
+albatross
+birds
+contrails
+jet trails
+exhaust gas
+
+*road feature
+tarmac
+grit
+line paint
+melted tar
+cobbles
+
+*sea feature
+salty spray
+seaweed
+
+*mud feature
+mud
+soil
+stones
+
+*ride-in air vehicle
+F11
+Eurofighter
+Airbus
+747
+
+*ride-on air vehicle
+guided missile
+nuke
+hoverboard
+
+*ride-in road vehicle
+Astra
+Land Rover
+transit van
+M3
+Audi TT
+
+*ride-on road vehicle
 Harley
-motorcycle
-moped
+BMX
+Kawasaki
+
+*ride-in sea vehicle
+speedboat
+narrowboat
+dreadnought
+
+*ride-on sea vehicle
 yacht
+jet ski
+catamaran
+
+*ride-in mud vehicle
+Range Rover
+ATV
+armoured personnel carrier
+tank
+
+*ride-on mud vehicle
+quadbike

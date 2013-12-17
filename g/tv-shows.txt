@@ -1,11 +1,15 @@
 *talk about tv
-My fave character in [tv series] is [[tv series] character].
-Watching [tv series]... [[tv series] character] is funny.
-Did you know my [family member] is in [tv series]?
+#N.b. this case conversion doesn't work right:
+[L dumb tv fave]
+I watch [tv series] just for [[tv series] character] tbh.
+My [family member] is in [tv series].
+
+*dumb tv fave
+my fave character in [tv series] is [[tv series] character].
 
 *tv series
 the Simpsons
-Pokémon
+Pokemon
 the Middle
 Scrubs
 Futurama
@@ -23,7 +27,7 @@ the boy
 the girl
 the baby
 
-*Pokémon character
+*Pokemon character
 Ash
 the adventure boy
 Pikachu
@@ -33,7 +37,6 @@ the mouse
 janitor
 braces girl
 Axl Rose
-the boy
 whisper boy
 
 *Scrubs character
@@ -41,7 +44,7 @@ Zach Braff
 Turk
 the mean guy
 janitor
-funny lawyer
+the funny lawyer guy
 
 *Futurama character
 robot

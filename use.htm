@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Use Paprika</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/icon/touch-icon.png">
+
+<link rel="stylesheet" type="text/css" href="paprika_style.css" />
+<style type="text/css">
+input, button{
+	display: inline;
+	font-size: 24px;
+	padding: 4px 0;
+	float: left;
+}
+input.query{
+	height: 33px;
+	width: 80%;
+	padding-left: 4px;
+}
+button.go{
+	width: 18%;
+	float: right;
+}
+
+#results{
+	margin: 1em 0;
+}
+div, form{
+	display: block;
+	clear: both;
+}
+
+a.black{
+	color: #000f1f;
+}
+</style>
+</head>
+<body>
+	<h1>
+		<a class="black" href="/">Paprika</a>
+		<small>
+			<a href="navigator.php">[Explore]</a> 
+			<a id="clear">[Clear]</a> 
+			<a href="mailto:admin@paprika.me.uk">[Contact]</a>
+		</small>
+	</h1>
+	<form action="api.php" method="GET">
+		<input type="text" name="q" class="query">
+		<button class="go">Go</button>
+	</form>
+	<div id="results"></div>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$r = null;
+		$(function(){
+		
+			$r = $('#results');
+			
+			$('button').click(function(e){
+				e.preventDefault();
+				q = $('form').serialize();
+				$.post("api.php", q, function(d) {
+					console.log(d);
+					$r.prepend("<p>" + d + "</p>");
+				});
+				
+			});
+			
+			$('#clear').click(function(){
+				$r.html("");
+			});
+			
+		});
+	</script>
+</body>
+</html>

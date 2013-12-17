@@ -1,0 +1,130 @@
+# MADE-UP MUSIC:
+# sunshine folk
+# heavy soul
+
+*made-up music
+[music genre modifier] [music genre]
+
+*music genre
+dance
+disco
+electro
+folk
+funk
+house
+jazz
+metal
+pop
+R&B
+rap
+rock
+soul
+
+*music genre modifier
+classical
+contemporary
+death
+downbeat
+experimental
+heavy
+neo
+postmodern
+sunshine
+thrash
+upbeat
+
+
+# MUSICAL ROLE:
+# Drums in a rock band
+# Synth in an experimental music group
+*musical role
+[H music style][[music style instrument] in [a] [[music style] band]
+
+*music style
+rock
+classical
+jazz
+electro
+
+*rock band
+rock band
+garage band
+
+*classical band
+orchestra
+
+*jazz band
+jazz band
+jazz ensemble
+
+*electro band
+live electronic act
+experimental music group
+
+*instrument
+banjo
+bass
+cello
+clarinet
+cornet
+double bass
+drums
+electric guitar
+fiddle
+flute
+guitar
+harp
+harpsichord
+keyboard
+piano
+saxophone
+synth
+trombone
+trumpet
+tuba
+ukelele
+viola
+violin
+
+*rock instrument
+electric guitar
+bass
+drums
+keys
+electric violin
+synth
+
+*electro instrument
+modular synth
+analog synth
+lead synth
+kaoss pad
+sample pad
+digital drums
+stylophone
+
+*classical instrument
+cello
+clarinet
+cornet
+harp
+flute
+oboe
+piano
+timpani
+trombone
+trumpet
+tuba
+viola
+violin
+
+*jazz instrument
+banjo
+bass guitar
+clarinet
+drums
+guitar
+piano
+saxophone
+trumpet
+trombone

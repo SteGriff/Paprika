@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+body{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	width: 95%;
+	margin: 1em auto;
+}
+
+h1{
+	line-height: 1.5em;
+}
+h1 small{
+	font-weight: 100;
+	font-size: small;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #04a;
+}
+
+#results{
+	border: 1px solid #eee;
+	min-height: 2em;
+}
+
+code {
+    background: #E6F7FF;
+    font-size: 1.4em;
+    padding: 0 3px;
+}
+
+@media(max-width: 767px){
+	body{
+		width: 99%;
+	}
+	h1 small{
+		font-size: 0.5em;
+	}
+}

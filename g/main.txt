@@ -4,6 +4,29 @@
 # and members can be defined on new lines
 # Ignore other whitespace, like this line:
 
+#Grammar Infrastructure
+
+#Usage like [H s/p]Where [be [s/p]] my [[s/p] frequently lost item]?
+# ->		{plural} Where [be plural] my [plural frequently lost item]?
+# ->		Where are my keys?
+
+*s/p
+singular
+plural
+
+*be plural
+are
+
+*be singular
+is
+
+#Example usage in g/cruising.txt
+*on/in
+on
+in
+
+# ----- Random old grammars -----
+
 *complement
 You're so [skilled at ability]
 I admire how [skilful you are at ability]
@@ -36,39 +59,14 @@ surfing
 dancing
 
 *do activity
-play [games]
+play [game]
 go [weekending]
-write [written works]
+write [written work]
 
 *doing activities
-playing [games]
-
-*concern for you
-how are you?
-are you ok?
-are you alright?
-are you feeling ok?
-are you feeling alright?
-
-*concern for self
-I feel [somewhat ill]
-I'm [somewhat ill]
-[groan]... I feel [somewhat ill]
-[groan]... I'm [somewhat ill]
-
-*somewhat ill
-[ill]
-[a bit] [ill]
-sick as [a] [animal]
-
-*concern for country
-this country has gone to the [animal]s
-this country used to be great
-
-*concern
-[concern for you]
-[concern for self]
-[concern for country]
+playing [game]
+writing [written work]
+[weekending]
 
 *groan
 eeuurrgh
@@ -92,106 +90,6 @@ rubbish
 bad
 woozy
 dizzy
-
-*character
-is [somewhat trait]
-[does good things]
-[does bad things]
-
-*trait
-[good trait]
-[bad trait]
-
-*somewhat trait
-[somewhat good trait]
-[somewhat bad trait]
-
-*somewhat bad trait
-[a bit] [bad trait]
-[a bit] too [bad trait]
-
-*bad trait
-selfish
-proud
-greedy
-loud
-noisy
-attention-seeking
-grumpy
-annoying
-boring
-officious
-violent
-
-*somewhat good trait
-[very] [good trait]
-too [good trait]
-
-*good trait
-nice
-kind
-gentle
-honest
-sweet
-considerate
-good company
-noble
-bold
-courageous
-sincere
-
-*very
-very
-so
-rather
-auspiciously
-considerably
-
-*does good things
-volunteers at the [charity place]
-[looks after] [the vulnerable]
-
-*does bad things
-hurts people
-
-*looks after
-looks after
-takes care of
-looks out for
-spends time with
-cares a lot for
-
-*the vulnerable
-the homeless
-people in need
-orphans
-the orphans
-old folks
-the old folks
-injured animals
-
-*charity place
-the charity shop
-the orphanage
-the shelter
-the soup kitchen
-the rescue centre
-the hospice
-the old folks' home
-
-*gossip
-did you hear about [male name]? He [did something interesting]
-I notice [name] [did something interesting]
-
-*did something interesting
-adopted [adoptee]
-disappeared for days
-
-*adoptee
-[a] [animal]
-another [animal]
-[a] [infant]
-another [infant]
 
 *infant
 child

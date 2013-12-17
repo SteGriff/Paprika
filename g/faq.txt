@@ -1,5 +1,5 @@
 *is x even a real y
-[!category] Is [[category]] even a real [category]?
+[H category] Is [[category]] even a real [category]?
 
 *what is an x? is y an x?
 What is a [category]? Is [[category]] a [category]?
@@ -17,3 +17,30 @@ car
 limousine
 pool
 abode
+
+*proverb interrupted
+[proverb first half] [urgent question]
+
+*urgent question
+where is the [emergency equipment]
+[H s/p]where [be [s/p]] my [[s/p] frequently lost item]?!
+
+*emergency equipment
+fire extinguisher
+defibrilator
+insulin
+
+*singular frequently lost item
+phone
+wallet
+coat
+tie
+ticket
+pen drive
+laptop
+
+*plural frequently lost item
+keys
+shoes
+tickets
+gloves

@@ -1,8 +1,10 @@
 g/tweets.txt
 g/main.txt
 g/general-knowledge.txt
+g/music.txt
 g/commentary.txt
 g/names.txt
+g/people-and-reactions.txt
 
 g/item-events.txt
 g/time.txt
@@ -17,3 +19,7 @@ g/faq.txt
 g/materials.txt
 g/social-media.txt
 g/tv-shows.txt
+
+g/grandiose.txt
+
+g/proverb.txt
