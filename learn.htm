@@ -18,6 +18,10 @@ input, button {
     padding: 4px;
 }
 
+main, aside{
+	display: block;
+}
+
 aside{
 	position: fixed;
 	right: 1em;
@@ -81,8 +85,8 @@ form{
 	
 	<p>But notice that <code>[[category]] is a [category]</code> doesn't work!
 	That's because the internal [category] tag hasn't been replaced by the time it gets to the nested brackets.
-	To fix this, you can render it early using a 'hidden' tag.</p>
-	<p><code>[H category][[category]] is a [category]</code></p>
+	To fix this, you can render it early using an 'early' or 'hidden' tag.</p>
+	<p><code>[!category][[category]] is a [category]</code></p>
 	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
 	
 	<p class="spaced">
@@ -90,18 +94,23 @@ form{
 	so you can write <code>[a] [category]</code> to get "a country" or "an animal".</strong>
 	</p>
 	
-	<p>I call 'H' a command. Commands are a single letter followed by a space, at the start of a tag.</p>
-	<p>Try:</p>
-	<p><code>THAT'S [U hyperbole] [U great], [U name]!!</code></p>
-	<p><code>is [L country] even a real country lol</code></p>
-	<p><code>He drove a [? colour] car</code> (For a 50% chance of that tag being rendered empty -- all extra spaces are removed too)</p>
-	<form action="api.php" method="GET">
-	<input type="text" name="q" class="query" value="THAT'S [U hyperbole] [U great], [U name]!!">
-	<button class="go">Try it</button></form>
+	<p>I call '!' a command. Commands are a special character at the start of a tag.</p>
+	<p>There are 2 commands; '!' and '?'. The ? tag gives a 50% chance of that tag being rendered empty</p>
+	<p><code>He drove a [?colour] car</code></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query"><button class="go">Try it</button></form>
 	
+	<p>Forward slashes make the tag pick between literal phrases: <code>Let's go [north/south/east/west/up the hill/down the well]</code></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query" value="Let's go [north/south/east/west/up the hill/down the well]">
+	<button class="go">Try it</button></form>
+		
+	<p>This can be used like '?' except that where '?' makes a word taken from the grammar optional, slash does it for literals. So <code>[/cat]</code>
+	can come back as either 'cat' or nothing. <code>[?cat]</code> would fail, because there is no grammar key for 'cat'.</p>	
+	<p>You can use early calls to make slash-tags more powerful: <code>[!beast][[beast]/bananas]</code></p>
+	<form action="api.php" method="GET"><input type="text" name="q" class="query" value="[cat/dog][s/] and [rat/hog][s/]">
+	<button class="go">Try it</button></form>
+
 	<p class="spaced">
-	<strong>The commands don't all work quite right, especially in nests.</strong>
-	Paprika is a rapid prototype, and I'm still working on the best way to do some of this stuff!
+		<strong>Paprika is a rapid prototype, and I'm still working on a better way to do some of this stuff!</strong>
 	</p>
 	
 	<div class="spaced">
@@ -109,6 +118,8 @@ form{
 	<a href="/use.htm">Use Paprika</a></p>
 	<p>Please email me comments and feedback: <code>ste at paprika me uk</code>. Have fun!</p>
 	</div>
+	
+	<div class="spaced"></div>
 	
 	</main>
 	

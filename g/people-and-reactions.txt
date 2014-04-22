@@ -128,11 +128,15 @@ the old folks' home
 
 *gossip
 did you hear about [male name]? He [did something interesting]
+did you hear about [female name]? She [did something interesting]
 I notice [name] [did something interesting]
+Apparently [name] [did something interesting]
 
 *did something interesting
 adopted [adoptee]
 disappeared for days
+[!s/p]found my [[s/p] frequently lost item]?!
+[does good things]
 
 *adoptee
 [a] [animal]

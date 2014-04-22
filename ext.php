@@ -10,22 +10,24 @@ function from_request($k){
 	return null;
 }
 
-function http_fatal_400($msg){
-	header("HTTP/1.1 400 Bad Request [$msg]");
-	die();
-}
-function http_fatal_500($msg){
-	header("HTTP/1.1 500 Server fail [$msg]");
-	die();
-}
-function http_201($type, $id){
-	header("HTTP/1.1 201 Created [$type $id]");
-	echo $id;
-	die();
-}
 function json($o){
 	header("content-type: application/json");
 	die(json_encode($o));
+}
+
+function isVowel($c){
+	//Can find character c in vowel array?
+	return strpos('aeiou', $c) !== false;
+}
+
+function setError($text){
+	global $ERROR;
+	$ERROR = "\n<p>*$text</p>\n";
+	return $ERROR;
+}
+
+function randomFrom($array){
+	return $array[array_rand($array)];
 }
 
 ?>

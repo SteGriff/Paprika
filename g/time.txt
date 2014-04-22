@@ -3,6 +3,13 @@ this morning
 yesterday morning
 yesterday afternoon
 last night
+all day
+all yesterday
+last week
+the other day
+just now
+
+*at recent time and place
 when I was [at recent place]
 
 *at recent place

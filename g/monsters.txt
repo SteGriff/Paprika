@@ -1,3 +1,9 @@
+#See also: Lore
+
+*monster tweet
+Observe the [monster]
+The [monster] is my favourite
+
 *neutral power
 blazing
 fire
@@ -186,8 +192,5 @@ zebu
 [beast] of [dark home]
 
 *monster
-[power] [beast]
-[light power] [beast] of [light home]
-[dark power] [beast] of [dark home]
-[beast] of [light home]
-[beast] of [dark home]
+[?power] [light home] [beast]
+[?power] [dark home] [beast]

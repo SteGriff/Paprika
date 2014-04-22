@@ -1,12 +1,5 @@
 *item event phrase
-My [thing] [did [thing] action]
-[thing] [did [thing] action]
-[thing] [did [thing] action], [item event exclamation]
-
-*item event phrase with time
-My [thing] [did [thing] action] [recently]
-[thing] [did [thing] action] [recently]
-[thing] [did [thing] action] [recently], [item event exclamation]
+[My/] [thing] [did [thing] action] [?recently], [?item event exclamation]
 
 *thing
 alarm clock
@@ -18,6 +11,8 @@ internet
 tamagotchi
 computer
 trousers
+boss
+phone
 
 *item event exclamation
 help?
@@ -30,6 +25,20 @@ what will happen?
 what is my life?
 why me?
 so...?
+interesting...
+
+*did phone action
+died
+rang and then stopped
+fell off the table
+fell on my face
+
+*did boss action
+gave me a pay rise
+shouted at me
+told me off
+sent me to get lunch
+watched me
 
 *did alarm clock action
 just went off

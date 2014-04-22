@@ -1,6 +1,6 @@
 *talk about tv
 #N.b. this case conversion doesn't work right:
-[L dumb tv fave]
+[dumb tv fave]
 I watch [tv series] just for [[tv series] character] tbh.
 My [family member] is in [tv series].
 

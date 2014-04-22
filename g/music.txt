@@ -2,6 +2,12 @@
 # sunshine folk
 # heavy soul
 
+*music tweet
+Listening to a great new [made-up music] album
+I play [!music style][[music style] instrument] in [a] [[music style] band].
+Do you listen to my [!music style][[music style] band]??
+Check out my new [made-up music] album
+
 *made-up music
 [music genre modifier] [music genre]
 
@@ -38,7 +44,7 @@ upbeat
 # Drums in a rock band
 # Synth in an experimental music group
 *musical role
-[H music style][[music style instrument] in [a] [[music style] band]
+[!music style][[music style] instrument] in [a] [[music style] band]
 
 *music style
 rock

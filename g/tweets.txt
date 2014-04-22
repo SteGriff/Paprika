@@ -1,10 +1,38 @@
 *tweet
 [item event phrase]
-[item event phrase with time]
 [talk about tv]
-[follow me on twitter]
-That was the day [name] [lore]
-I [lore]
-[is x even a real y]
-[what is an x? is y an x?]
+[meta tweet]
+[monster tweet]
+[lore tweet]
+[confused question]
 [boast]
+[cv]
+[advice]
+[just cruising]
+[dungeon tweet]
+[gossip]
+[gossip commentary]
+[complement]
+[proverb interrupted]
+[music tweet]
+[shoutout]
+Hey [name]!
+
+*pre-ramble
+the [problem/effects/condition] started [at recent time and place]
+I first noticed that [at recent time and place]
+
+*proverb interrupted
+[proverb first half] [urgent question]
+
+*urgent question
+where is the [emergency equipment]???
+where is my [single frequently lost item]?!
+where are my [plural frequently lost item]?!
+
+*confused question
+[!category] Is [[category]] even a real [category]?
+What is [a] [category]? Is [[category]] [a] [category]?
+
+*boast
+My [light power] [built posession] is entirely [construction material#1] and [construction material#2]

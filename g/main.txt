@@ -6,7 +6,7 @@
 
 #Grammar Infrastructure
 
-#Usage like [H s/p]Where [be [s/p]] my [[s/p] frequently lost item]?
+#Usage like [!s/p]Where [be [s/p]] my [[s/p] frequently lost item]?
 # ->		{plural} Where [be plural] my [plural frequently lost item]?
 # ->		Where are my keys?
 

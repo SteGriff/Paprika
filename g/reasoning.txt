@@ -1,0 +1,140 @@
+# Rest your face on the desk. It feels warm because I left it in the sun.
+# See this penguin egg? I made sure I sat on it
+
+*advice
+[!do this][[do this]]; [reason to [do this]]
+
+#1 -> [put your something somewhere]; [reason to put your something somewhere]
+#2 -> Rest your head on the desk; 
+
+#See this [object to keep warm]? I made sure [reason it feels warm]
+
+# ===== Top level of categories of things to do, for selecting a reason =====
+*do this
+put your something somewhere
+go on holiday
+eat something
+drink something
+
+# ----- Lower-level of categories, to expand on topics -----
+*eat something
+eat something
+have a drink
+have some food
+have a snack
+
+*drink something
+drink something
+drink some water
+have a cup of tea
+
+*go on holiday
+go on holiday
+take a break
+go home early
+
+*put your something somewhere
+Rest your [appendage] on this [furniture]
+Put your [appendage] on this [furniture]
+Feel this [furniture]
+
+# -- Helper objects --
+*appendage
+head
+face
+arm
+feet
+legs
+
+*furniture
+desk
+seat
+cushion
+
+##
+## ===== REASONING =====
+##
+## Everything from [do this] gets a reason here:
+
+*reason to put your something somewhere
+[reason it feels nice]
+
+*reason to go on holiday
+[reason you need a break]
+
+*reason to eat something
+[reason you're hungry]
+[reason you will be hungry]
+
+*reason to drink something
+[reason you're thirsty]
+[reason you will be thirsty]
+
+## ---- REASONS TO PUT YOUR SOMETHING SOMEWHERE ----
+
+*reason it feels nice
+[reason it feels comfortable]
+
+*reason it feels comfortable
+it's warm because [reason it feels warm]
+it's so [comfortable]
+
+*comfortable
+comfortable
+warm
+soft
+smooth
+
+*reason it feels warm
+the sun was shining on it
+it's specially heated
+I left it in the sun
+I left it next to the [heater]
+I sat on it
+
+*heater
+heater
+fan heater
+radiator
+fire
+range
+wood-burner
+boiler
+
+## ----- REASONS TO GO ON HOLIDAY -----
+*reason you need a break
+[reason you're tired]
+[reason you can't concentrate]
+
+*reason you're tired
+you've been working hard
+you work very hard
+you've put in a lot of extra hours
+you didn't get much sleep
+you've not been sleeping well
+the baby kept you up all night
+
+*reason you can't concentrate
+you don't have any energy
+you seem distracted
+your mind is elsewhere
+
+## ----- REASONS TO EAT SOMETHING -----
+*reason you're hungry
+you skipped breakfast
+you look hungry
+you're not yourself
+
+*reason you will be hungry
+we're going to be here a while
+there's no time for dinner tonight
+we'll work through lunch
+
+## ----- REASONS TO DRINK SOMETHING -----
+*reason you're thirsty
+it's very hot in here
+the air conditioning broke down
+we're stuck in this desert
+
+*reason you will be thirsty
+we'll be out here for a while

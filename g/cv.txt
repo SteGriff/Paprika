@@ -1,0 +1,56 @@
+*cv
+I am [cv noun] [embod][ified]
+I am [cv noun] [embod][ified] and [cv noun#2] [embod#2][ified#2]
+I am [a] [cv adjective] [cv personage]
+I am [cv adjective] [cv noun] [embod][ified]
+
+*embod
+embod
+epon
+person
+just
+opt
+dyn
+synerg
+perfect
+upgrad
+incarn
+orient
+
+*ified
+ified
+ificated
+icated
+ymised
+imised
+egrated
+amated
+ivated
+
+*cv noun
+business
+excellence
+personality
+success
+profit
+teamwork
+synergy
+reliability
+hard work
+innovation
+motivation
+results
+
+*cv adjective
+dynamic
+experienced
+innovative
+motivated
+results-oriented
+fast-paced
+entrepreneurial
+
+*cv personage
+team player
+problem solver
+entrepreneur

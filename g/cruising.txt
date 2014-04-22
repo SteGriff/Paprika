@@ -1,5 +1,5 @@
 *just cruising
-[H terrain]I [traverse [terrain]] [by/past/through] [on/in] my [ride-[on/in] [terrain] vehicle], spraying [[terrain] feature] into your [astonished] face
+[!terrain]I [traverse [terrain]] [by/past/through] [on/in] my [ride-[on/in] [terrain] vehicle], spraying [[terrain] feature] into your [astonished] face
 
 *on/in
 on

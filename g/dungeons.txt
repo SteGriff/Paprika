@@ -1,0 +1,72 @@
+*dungeon tweet
+Checking out this [dungeon room]
+You enter [a] [dungeon room]
+
+*dungeon room
+[!nasty/nice][!dungeon room type][[nasty/nice] [dungeon room type] description] [[dungeon room type]]
+
+*nasty/nice
+nasty
+nice
+
+*dungeon room type
+cavern
+forest
+room
+
+*cavern
+cavern
+cave
+rock tunnel
+cave tunnel
+
+*forest
+forest
+wood
+woodland
+
+*room
+room
+chamber
+hall
+atrium
+corridor
+
+*nasty cavern description
+dark
+dank
+moldy
+wet
+confined
+cold
+tight
+
+*nice cavern description
+cavernous
+giant
+dry
+warm
+
+*nice forest description
+dense
+thick
+green
+lush
+
+*nasty forest description
+muddy
+bare
+sparse
+dark
+twisted
+
+*nice room description
+panelled
+stone
+smart
+wide
+
+*nasty room description
+odorous
+shabby
+bare

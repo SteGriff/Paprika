@@ -5,6 +5,13 @@ body{
 	margin: 1em auto;
 }
 
+h1, h2, p {
+	margin-bottom: 0.3em;
+}
+hr{
+	margin: 1em 0;
+}
+
 h1{
 	line-height: 1.5em;
 }
