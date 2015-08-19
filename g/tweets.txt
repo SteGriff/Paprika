@@ -15,8 +15,11 @@
 [complement]
 [proverb interrupted]
 [music tweet]
-[shoutout]
+[shout out]
 Hey [name]!
+[what the tweet]
+[trolls tweet]
+[bad interaction tweet]
 
 *pre-ramble
 the [problem/effects/condition] started [at recent time and place]
@@ -27,7 +30,7 @@ I first noticed that [at recent time and place]
 
 *urgent question
 where is the [emergency equipment]???
-where is my [single frequently lost item]?!
+where is my [singular frequently lost item]?!
 where are my [plural frequently lost item]?!
 
 *confused question
@@ -36,3 +39,6 @@ What is [a] [category]? Is [[category]] [a] [category]?
 
 *boast
 My [light power] [built posession] is entirely [construction material#1] and [construction material#2]
+
+*what the tweet
+[what/why/how] [the/so/such] [dolf/pea/dog/ship/tweet/ham/egg]

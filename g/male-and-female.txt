@@ -1,0 +1,78 @@
+# Male and female calling words
+# use [m/fem] to select
+# to get 'male' or 'female' just do [m/fem]ale
+
+# nominative (nomi) he,
+# accusative (accu) him,
+# reflexive (refl) himself,
+# possessive (poss) his
+
+##### Nominative #####
+
+*m nominative
+he
+
+*m nomi
+[m nominative]
+
+*fem nominative
+she
+
+*fem nomi
+[fem nominative]
+
+##### Accusative #####
+
+*m accusative
+him
+
+*m accu
+[m accusative]
+
+*fem accusative
+her
+
+*fem accu
+[f accusative]
+
+##### Reflexive #####
+
+*m reflexive
+him
+
+*m refl
+[m reflexive]
+
+*fem reflexive
+her
+
+*fem refl
+[f reflexive]
+
+##### Possessive #####
+
+*m possessive
+his
+
+*m poss
+[m possessive]
+
+*fem possessive
+her
+
+*fem poss
+[fem possessive]
+
+
+##### General calling words #####
+# Not definitive because they vary:
+# Don't use [[m person] thing],
+# use [[m/fem]ale thing]
+
+*m person
+man
+guy
+
+*fem person
+woman
+lady

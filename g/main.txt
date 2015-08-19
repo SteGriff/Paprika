@@ -25,6 +25,15 @@ is
 on
 in
 
+##### Good and bad #####
+
+*good
+good
+cool
+interesting
+fun
+neat
+
 # ----- Random old grammars -----
 
 *complement
@@ -45,8 +54,8 @@ skilful you are at [skill]
 playing [instrument]
 [sport]
 playing [sport]
-[written works]
-writing [written works]
+[written work]
+writing [written work]
 [weekending]
 
 *weekending

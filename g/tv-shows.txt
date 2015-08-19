@@ -1,97 +1,92 @@
 *talk about tv
-#N.b. this case conversion doesn't work right:
-[dumb tv fave]
-I watch [tv series] just for [[tv series] character] tbh.
-My [family member] is in [tv series].
-
-*dumb tv fave
+i watch [tv series] just for [[tv series] character][ tbh/].
+my [family member] is in [tv series].
 my fave character in [tv series] is [[tv series] character].
+[!tv series][!good]for [[good] /][storys/stories] about [[tv series] character] in [tv series] please watch [it/the show/[tv series]]
+do they still make [tv series]
 
 *tv series
-the Simpsons
-Pokemon
-the Middle
-Scrubs
-Futurama
-Thunderbirds
-Stargate
-Star Trek
-Firefly
-the Big Bang Theory
-Downton Abbey
+simpsons
+pokemon
+the middle
+scrubs
+futurama
+thunderbirds
+stargate
+star trek
+firefly
+big bang theory
+downton abbey
 
-*the Simpsons character
-Homer
-Marge
+*simpsons character
+homer
+marge
 the boy
 the girl
 the baby
 
-*Pokemon character
-Ash
+*pokemon character
 the adventure boy
-Pikachu
 the mouse
 
-*the Middle character
+*the middle character
 janitor
 braces girl
-Axl Rose
+axl rose
 whisper boy
 
-*Scrubs character
-Zach Braff
-Turk
+*scrubs character
+zach braff
+turk
 the mean guy
 janitor
-the funny lawyer guy
+the lawyer guy
 
-*Futurama character
+*futurama character
 robot
 crab
 one eye girl
 space monster
 
-*Thunderbirds character
+*thunderbirds character
 the puppet
-the Dad
+the dad
 science man
 the spaceship
-Thunderbird 1
-Thunderbird 2
-Thunderbird 3
-Thunderbird 4
-Thunderbird 5
+thunderbird 1
+thunderbird 2
+thunderbird 3
+thunderbird 4
+thunderbird 5
 the big digger
 
-*Stargate character
+*stargate character
 the sarcastic one
-Talc
+talc
 ronin dex
-science man
 science woman
 
-*Star Trek character
+*star trek character
 robot
 the bald captain
 the fighty captain
 science man
-the doctor lady
-rude doctor
+the lady doctor
+the rude doctor
 
-*Firefly character
+*firefly character
 the nice captain
 vicar
 summer river
 engine girl
 
-*the Big Bang Theory character
+*big bang theory character
 the sarcastic one
 science guy
 funny science girl
 comics guy
 
-*Downton Abbey character
+*downton abbey character
 posh man
 friendly butler
 fiesty girl

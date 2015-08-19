@@ -17,11 +17,15 @@ To play with Paprika, go to <http://paprika.me.uk>. Learn about the Formula lang
 
 To get output, you send commands in Paprika Formula Language. Here is a tutorial/reference:
 
+### Basic text
+
 String literals are returned in output, identical to their input:
 
 	Hello
 	
 Produces "Hello"
+
+### Grammar lookups
 
 Expressions in square brackets pick a random definition from that category, as defined in grammar files:
 
@@ -29,13 +33,17 @@ Expressions in square brackets pick a random definition from that category, as d
 	
 May produces "dog" or "cat", etc.
 
-The tags `[a]` and `[an]` are magical. They wait until everthing else has been populated, and then pick correctly between
-'a' and 'an', based on the first letter of the following word. They are both supplied, so that the Formula can read naturally:
+### A and An
 
-	[an] [animal]
+The words `a` and `an` are magical. They wait until everthing else has been populated, and then pick correctly between
+'a' and 'an', based on the first letter of the following word.
+
+	an [animal]
 	
 May produce "a dog" or "an otter".  
 *N.b. Currently 'aeiou' is considered to be the set of vowels which require 'an'.*
+
+### Using lookups more than once
 
 If you use identical tags more than once, they will be populated with the same thing (think of it as a global find+replace):
 
@@ -49,6 +57,8 @@ To generate different results, you can put labels inside tags to differentiate t
 	
 Be warned that this currently doesn't exclude results which have been chosen already,
 so you may get the same result in both brackets. However, the randomisation is done seperately for each one.
+
+### Injecting a lookup
 
 You can inject the results of a tag into another tag. If the 'simple' tag comes first, this is easy:
 
@@ -73,19 +83,19 @@ If the complex part (with nested brackets) comes first in the Formula, it will f
 	 
 So you can make a 'hidden call' to avoid this:
 
-	[H category][[category]] is the best [category]
+	[!category][[category]] is the best [category]
 	
-The `H` command means that the result of `[H category]` will be hidden, but replaces all other instances.
+### Commands
+
+The `!` command means that the result of `[!category]` will be hidden, but replaces all other instances.
 The above might produce "brown is the best colour".
 
-Other commands can be used, although they only really work on simple categories (not injections):
-
- * `U` produces uppercase: `[U sport]`
- * `L` produces lowercase: `[L female name]`
- * `?` gives the marked tag a 50% chance of appearing at all: `a [? colour] car`
- 	* Double spaces will be simplified after parsing.
+The `?` command gives the marked tag a 50% chance of appearing at all: `a [?colour] car`
+Double spaces are always simplified after parsing.
 	
-If the grammar allows for it, you can trigger output with strong contextual links in this way.
+### Using injection for context
+
+If the grammar allows for it, you can trigger output with strong contextual links.
 The following example is not defined in my grammars, but is given for example. Assume this grammar:
 
 	*animal
