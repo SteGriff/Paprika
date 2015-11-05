@@ -121,23 +121,55 @@ function parse($v){
 	$_A = ' a ';
 	$_An = ' an ';
 	
-	$v = replaceArticles($v, $_A, $_An, $_A, $_An);
-	$v = replaceArticles($v, $_An, $_A, $_A, $_An);
+	$v = replaceArticles($v, $_A, $_An);
+	$v = replaceArticles($v, $_An, $_A);
 	
 	return $v;
 }
 
-function replaceArticles($v, $a, $b, $_A, $_An)
+function strPosOfArticle($haystack, $a)
+{
+	if ($a === ' a ')
+	{
+		//Check for 'a ' at start of string or ' a ' anywhere inside
+		if (strtolower($haystack[0]) === 'a' && $haystack[1] === ' ')
+		{
+			return 0;
+		}
+		else
+		{
+			return strpos($haystack, ' a ');
+		}
+	}
+	else
+	{
+		//Check for 'an ' at start of string or ' an ' anywhere inside
+		if (strtolower($haystack[0] . $haystack[1]) === 'an' &&
+			$haystack[2] === ' ')
+		{
+			return 0;
+		}
+		else
+		{
+			return strpos($haystack, ' an ');
+		}
+	}
+}
+
+function replaceArticles($v, $a, $b)
 {
 	//TODO Use regex to match start/end of string instead of flanking spaces
+	// use word boundary and a/an
+	
+	$_A = ' a ';
+	$_An = ' an ';
 	
 	$finalProcessedPos = 0;
 	
-	$openA = strpos($v, $a);
-	while ($openA !== false && $finalProcessedPos < $openA)
+	$open = strPosOfArticle($v, $a);
+	while ($open !== false && $finalProcessedPos < $open)
 	{
-		//^start $end
-		$pos = strpos($v, $a);
+		$pos = strPosOfArticle($v, $a);
 		$finalProcessedPos = $pos;
 				
 		//Take a sample of the next 4 letters after the ' a '
@@ -149,7 +181,7 @@ function replaceArticles($v, $a, $b, $_A, $_An)
 		//echo "\n4 nl $nextLetter res $resolution v $v";
 		
 		//Check for more
-		$openA = strpos($v, $a);
+		$open = strPosOfArticle($v, $a);
 	}
 	
 	//echo "\n6 return $v";

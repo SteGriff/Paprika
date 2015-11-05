@@ -1,9 +1,0 @@
-*lore tweet
-That was the day [name] [lore]
-I [lore]
-Suddenly, the [dark monster] appears before you! "[urgent question]", you cry!
-
-*lore
-faced the [dark monster] and [bad fate]
-met the [light monster] and [good fate]
-defeated the [dark monster]

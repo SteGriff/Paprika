@@ -20,7 +20,7 @@ h2 small{
 <?php
 
 require 'grammar.php';
-require 'timing.php';
+require 'api/timing.php';
 
 header('content-type: text/plain');
 

@@ -1,14 +1,14 @@
 <?php
 
-require 'ext.php';
-require 'timing.php';
+require 'api/ext.php';
+require 'api/timing.php';
 
 //Render any errors/debug in plain text.
 header('content-type: text/plain');
 
 startTiming();
 
-$GRAMMAR_FILE = 'index.grammar';
+$GRAMMAR_FILE = 'paprika-grammar/index.grammar';
 
 //Final output, $result:
 $result = '';

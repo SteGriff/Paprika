@@ -5,7 +5,7 @@ require 'ext.php';
 require 'timing.php';
 
 //Pre-loaded grammar
-require '../grammar.php';
+require 'grammar.php';
 
 $DEBUG = from_request('debug');
 $ERROR = null;
