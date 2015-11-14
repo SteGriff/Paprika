@@ -7,47 +7,71 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/icon/touch-icon.png">
 
-<link rel="stylesheet" type="text/css" href="paprika_style.css" />
-
-<style type="text/css">
-body{
-	text-align: center;
-	box-shadow: 8px 0 8px -10px, -8px 0 8px -10px;
-}
-#logo{
-	width: 10%;
-	margin: 1em auto;
-}
-h1{
-	text-align: center;
-}
-ul{
-	list-style: none;
-	margin-top: 2em;
-}
-li{
-	display: inline-block;
-	background: #ccc;
-	border: 1px solid #777;
-	border-style: none solid;
-	padding: 1em;
-	margin: auto 1em;
-}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="paprika_style.css" />
+<link rel="stylesheet" href="home.css" />
+<style>
 
 </style>
-</head>
-<body>
 
-	<img id="logo" src="img/mascot.png" alt="Paprika Mascot" />
-	<h1>Paprika</h1>
-	<p class="lead">A flavour text and natural language generator.</p>
-	<p><a href="http://github.com/stegriff/paprika">Free, Public Domain source code for Paprika is on GitHub.</a></p>
+</head>
+
+<body>
+	<header>
+		
+	<img class="logo" alt="Paprika Mascot" src="img/mascot.png">
 	
-	<ul role="nav">
-		<li><a href="learn.htm">Learn</a></li>
-		<li><a href="use.htm"><strong>Use</strong></a></li>
-		<li><a href="dev.htm">Develop</a></li>
+	<h1>
+		<a class="black" href="/">Paprika</a>
+	</h1>
+	
+	<ul>
+		<li><a href="explore.htm">[Explore the grammar]</a> </li>
+		<li><a id="clear">[Clear]</a> </li>
+		<li><a href="mailto:admin@paprika.me.uk">[Contact]</a></li>
 	</ul>
 	
+	</header>
+	
+	<form action="api.php" method="GET">
+		<div class="input-group">
+			<input
+				class="form-control query"
+				aria-label="Text input with multiple buttons"
+				type="text"
+				name="q">
+			<div class="input-group-btn">
+				<button type="reset" class="btn btn-default">Clear</button>
+				<button type="submit" class="btn btn-primary go">Go</button>
+			</div>
+		</div>
+	</form>
+	
+	<div id="results"></div>
+
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script>
+		$r = null;
+		$(function(){
+		
+			$r = $('#results');
+			
+			$('form').submit(function(e){
+				e.preventDefault();
+				q = $('form').serialize();
+				$.post("api.php", q, function(d) {
+					console.log(d);
+					$r.prepend("<p>" + d + "</p>");
+				});
+				
+			});
+			
+			$('#clear').click(function(){
+				$r.html("");
+			});
+			
+		});
+	</script>
 </body>
 </html>

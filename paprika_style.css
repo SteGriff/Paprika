@@ -15,10 +15,6 @@ hr{
 h1{
 	line-height: 1.5em;
 }
-h1 small{
-	font-weight: 100;
-	font-size: small;
-}
 
 a{
 	cursor: pointer;
@@ -37,11 +33,14 @@ code {
     padding: 0 3px;
 }
 
+.logo
+{
+	float: left;
+	height: 128px;
+}
+
 @media(max-width: 767px){
 	body{
 		width: 99%;
-	}
-	h1 small{
-		font-size: 0.5em;
 	}
 }
