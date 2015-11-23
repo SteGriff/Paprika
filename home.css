@@ -1,27 +1,17 @@
-input, button{
-	display: inline;
-	font-size: 24px;
-	padding: 4px 0;
-	float: left;
-}
-input.query{
-	height: 33px;
-	width: 80%;
-	padding-left: 4px;
-}
-button.go{
-	width: 18%;
-	float: right;
-}
 
-#results{
-	margin: 1em 0;
-}
-div, form{
-	display: block;
-	clear: both;
-}
 
 a.black{
 	color: #000f1f;
+}
+
+form
+{
+	margin-bottom: 2em;
+}
+
+.tutorial
+{
+	overflow-y: scroll;
+	margin-bottom: 0;
+	max-height: 30%;
 }

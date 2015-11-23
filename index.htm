@@ -18,19 +18,22 @@
 
 <body>
 	<header>
+		<img class="logo" alt="Paprika Mascot" src="img/mascot.png">
 		
-	<img class="logo" alt="Paprika Mascot" src="img/mascot.png">
-	
-	<h1>
-		<a class="black" href="/">Paprika</a>
-	</h1>
-	
-	<ul>
-		<li><a href="explore.htm">[Explore the grammar]</a> </li>
-		<li><a id="clear">[Clear]</a> </li>
-		<li><a href="mailto:admin@paprika.me.uk">[Contact]</a></li>
-	</ul>
-	
+		<h1>
+			<a class="black" href="/">Paprika</a>
+		</h1>
+		
+		<nav>
+			<ul>
+				<li><a href="navigator.php">[Explore the grammar]</a> </li>
+				<li><a href="dev.htm">[Dev with the API and libraries]</a> </li>
+			</ul>
+		</nav>
+		
+		<p>
+		"Paprika" is a grammar format for writing fun text which varies itself, and also the software which reads that format. It's great for twitter bots and other randomly-generated dialogue. You can try my Paprika grammars in this toy, or you can <a href="dev.htm">find out how to integrate it</a> for yourself.
+		</p>
 	</header>
 	
 	<form action="api.php" method="GET">
@@ -47,15 +50,68 @@
 		</div>
 	</form>
 	
-	<div id="results"></div>
+	<p>Output:</p>
+	<div id="results" class="well"></div>
 
-	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<h2>Try it</h2>
+	
+	<div class="tutorial">
+		<p>You can click examples to try them, like this one: <code class="example">Hello [animal]</code> </p>
+
+		<h3>Tags work like global find + replace</h3>
+		<p>If you use identical tags more than once, they will be replaced with the same thing (like find+replace).
+		<code class="example">My [animal] is [good trait]. I love my [animal].</code></p>
+
+		<p>If you want to randomise tags more than once, you can label them separately with a hash. Even then, they might randomise the same result!
+		<code class="example">I like [sport#1] and [sport#another]</code></p>
+
+		<h3>Tag results come from grammar files</h3>
+		<p>The options for each tag come from so-called "grammar" files. You can <a href="/navigator.php">explore the whole grammar</a> but it might be a bit confusing. You can <a href="dev.htm">learn about implementing your own grammar</a>.</p>
+
+		<p>In the grammar, there is <code class="example">[category]</code>. For each category, there is also a list of those things (like "<code class="example">[country]</code>", and "<code class="example">[colour]</code>").</p>
+
+		<h3>Nesting brackets</h3>
+		<p>This lets us do something like <code class="example">My favourite [category] is [[category]]</code></p>
+		<p><small>(The first find+replace changes the formula to something like <code class="example">My favourite country is [country]</code>)</small></p>
+
+		<h3>Hidden tags</h3>
+		<p>But notice that <code class="example">[[category]] is a [category]</code> doesn't work!
+		That's because the internal [category] tag hasn't been replaced by the time it gets to the nested brackets.
+		To fix this, you can render it early using a 'hidden' tag.</p>
+		<p><code class="example">[!category][[category]] is a [category]</code></p>
+
+		<h3>Magic [a]</h3>
+		<p>
+		<strong>One cool Paprika feature is that [a] and [an] are magical. They look at the next letter in the finished sentence and change appropriately,
+		so you can write <code class="example">[a] [category]</code> to get "a country" or "an animal".</strong>
+		</p>
+
+		<p>I call '!' a command. Commands are a special character at the start of a tag.</p>
+		
+		<h3>'?' tags</h3>
+		<p>Another command is '?'. The '?' tag gives a 50% chance of that tag being rendered empty</p>
+		<p><code class="example">He drove a [?colour] car</code></p>
+
+		<h3>Slashes</h3>
+		<p>Forward slashes make the tag pick between literal phrases:
+		<code class="example">Let's go [north/south/east/west/up the hill/down the well]</code></p>
+			
+		<p>So you can also use '/' to make a literal word optional. Try this a few times: <code class="example">It's [/really ]nice</code></p>
+		<p><code class="example">[cat/dog][s/] and [rat/hog][s/]</code></p>
+
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script>
+		
 		$r = null;
+		$q = null;
+		
 		$(function(){
 		
 			$r = $('#results');
+			$q = $('input.query');
 			
 			$('form').submit(function(e){
 				e.preventDefault();
@@ -69,6 +125,13 @@
 			
 			$('#clear').click(function(){
 				$r.html("");
+			});
+			
+			$('.example').click(function(ev){
+				var el = $(ev.target);
+				var text = el.text();
+				$q.val(text);
+				$('form').submit();
 			});
 			
 		});

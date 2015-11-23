@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	width: 95%;
@@ -23,24 +23,40 @@ a{
 }
 
 #results{
-	border: 1px solid #eee;
 	min-height: 2em;
 }
 
-code {
-    background: #E6F7FF;
-    font-size: 1.4em;
-    padding: 0 3px;
+header{
+	margin: 2em 0;
 }
 
 .logo
 {
 	float: left;
 	height: 128px;
+	margin: 0 2em 1em 0;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+.example
+{
+	cursor: pointer;
 }
 
 @media(max-width: 767px){
-	body{
-		width: 99%;
+	.logo
+	{
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		display: block;
+	}
+	h1
+	{
+		text-align: center;
 	}
 }
