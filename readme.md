@@ -1,4 +1,4 @@
-#Paprika
+# Paprika
 
 Generates flavour text and natural language from human-readable grammar configuration files.
 <http://paprika.me.uk>
@@ -122,5 +122,5 @@ Then this formula:
 May produce `My dog woofed` or `My mouse spooked an elephant`
 
 ----------
-I hope you enjoy Paprika!
+I hope you enjoy Paprika!  
 @SteGriff - <http://stegriff.co.uk>
