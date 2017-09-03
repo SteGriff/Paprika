@@ -1,3 +1,3 @@
 [submodule "paprika-grammar"]
 	path = paprika-grammar
-	url = git://github.com/stegriff/paprika-grammar
+	url = https://github.com/stegriff/paprika-grammar
